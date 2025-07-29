@@ -8,10 +8,20 @@
 import SwiftUI
 
 @main
-struct DeepFinanceApp: App {
+struct FinanceDashboardApp: App {
+    // Gerenciador de Core Data
+    @StateObject private var persistenceController = PersistenceController.shared
+    // ViewModel principal, compartilhado por toda a aplicação
+    @StateObject private var vm = HomeViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeView()
+                    .navigationBarHidden(true) // Usamos uma barra de navegação customizada
+            }
+            // Injeta o contexto do Core Data no ambiente do SwiftUI
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            // Fornece o ViewModel para as views filhas através do ambiente
+            .environmentObject(vm)
         }
-    }
-}
