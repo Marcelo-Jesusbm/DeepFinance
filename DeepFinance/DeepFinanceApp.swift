@@ -13,7 +13,7 @@ struct FinanceDashboardApp: App {
     @StateObject private var persistenceController = PersistenceController.shared
     // ViewModel principal, compartilhado por toda a aplicação
     @StateObject private var vm = HomeViewModel()
-
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -25,3 +25,5 @@ struct FinanceDashboardApp: App {
             // Fornece o ViewModel para as views filhas através do ambiente
             .environmentObject(vm)
         }
+    }
+}
