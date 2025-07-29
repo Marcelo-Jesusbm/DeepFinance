@@ -10,7 +10,7 @@ import Combine
 
 
 
-struct Coin: Identifiable, Codable {
+struct Coin: Identifiable, Codable, Equatable {
     let id: String
     let symbol: String
     let name: String
@@ -84,6 +84,6 @@ struct Coin: Identifiable, Codable {
     }
 }
 
-struct SparklineIn7d: Codable {
+struct SparklineIn7d: Codable, Equatable{
     let price: [Double]?
 }
