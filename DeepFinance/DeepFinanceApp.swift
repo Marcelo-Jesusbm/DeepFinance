@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import Combine
+import CoreData
+
 
 @main
 struct FinanceDashboardApp: App {
-    // Gerenciador de Core Data
-    @StateObject private var persistenceController = PersistenceController.shared
+    // Gerenciador de Core Data (Corrigido: removido @StateObject)
+    private let persistenceController = PersistenceController.shared
     // ViewModel principal, compartilhado por toda a aplicação
     @StateObject private var vm = HomeViewModel()
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationView {

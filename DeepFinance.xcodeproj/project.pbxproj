@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB2AEF892E394F2600AC6522 /* PortfolioEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2AEF882E394F2600AC6522 /* PortfolioEntity.swift */; };
+		CB2AEF8C2E3950EA00AC6522 /* PortfolioEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB2AEF8A2E3950EA00AC6522 /* PortfolioEntity.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB2AEF3A2E3944B100AC6522 /* DeepFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2AEF882E394F2600AC6522 /* PortfolioEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioEntity.swift; sourceTree = "<group>"; };
+		CB2AEF8B2E3950EA00AC6522 /* PortfolioEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioEntity.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +57,7 @@
 		CB2AEF312E3944B100AC6522 = {
 			isa = PBXGroup;
 			children = (
-				CB2AEF882E394F2600AC6522 /* PortfolioEntity.swift */,
+				CB2AEF8A2E3950EA00AC6522 /* PortfolioEntity.xcdatamodeld */,
 				CB2AEF722E3949D000AC6522 /* Data */,
 				CB2AEF4A2E39452300AC6522 /* View */,
 				CB2AEF492E39451700AC6522 /* ViewModel */,
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2AEF892E394F2600AC6522 /* PortfolioEntity.swift in Sources */,
+				CB2AEF8C2E3950EA00AC6522 /* PortfolioEntity.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB2AEF8A2E3950EA00AC6522 /* PortfolioEntity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB2AEF8B2E3950EA00AC6522 /* PortfolioEntity.xcdatamodel */,
+			);
+			currentVersion = CB2AEF8B2E3950EA00AC6522 /* PortfolioEntity.xcdatamodel */;
+			path = PortfolioEntity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CB2AEF322E3944B100AC6522 /* Project object */;
 }
